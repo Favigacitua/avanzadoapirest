@@ -85,19 +85,19 @@ export const getJoyasFiltradas = async (req,res)=> {
             valores.push(precio_min);
         }
         
-        // Filtro de precio máximo
+       
         if (precio_max) {
             filtros.push(`precio <= $${valores.length + 1}`);
             valores.push(precio_max);
         }
         
-        // Filtro de categoría
+       
         if (categoria) {
             filtros.push(`categoria = $${valores.length + 1}`);
             valores.push(categoria);
         }
         
-        // Filtro de metal
+       
         if (metal) {
             filtros.push(`metal = $${valores.length + 1}`);
             valores.push(metal);

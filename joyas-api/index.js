@@ -81,7 +81,7 @@ app.get('/joyas/filtros', async (req,res)=>{
     
         const result = await getJoyasFiltradas(req,res)
         const links = {
-            self: 'http://localhost:3000/joyas/filtros',  // Link al propio recurso
+            self: 'http://localhost:3000/joyas/filtros',  
             joyas: 'http://localhost:3000/joyas',
 
         };
